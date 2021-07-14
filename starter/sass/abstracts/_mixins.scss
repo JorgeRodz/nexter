@@ -29,12 +29,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
 /* prettier-ignore */
 @mixin respond($breakpoint) {
   // max-width
-  @if $breakpoint == tablet-landscape {   
+  @if $breakpoint == tablet-landscape {
     @media only screen and (max-width: 75em) {              // 1200px / 16 = 75em
       @content;
     }
   }
-  @if $breakpoint == tablet-portrait {    
+  @if $breakpoint == tablet-portrait {
     @media only screen and (max-width: 56.25em) {           // 900px / 16 = 56.25em
       @content;
     }
@@ -44,7 +44,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
       @content;
     }
   }
-  
+
   //min-wdith
   @if $breakpoint == big-desktop {
     @media only screen and (min-width: 112.5em) {          // 1800px / 16 = 112.5em

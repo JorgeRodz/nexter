@@ -2,11 +2,11 @@
 
 // @import "./abstracts/functions";
 // @import "./abstracts/mixins";
-// @import "./abstracts/variable";
+@import "./abstracts/variable";
 
 // @import "./vendors/icon-font.css"; // Just for use in parcel
 
-// @import "./base/base";
+@import "./base/base";
 // @import "./base/animations";
 // @import "./base/typography";
 // @import "./base/utilities";
