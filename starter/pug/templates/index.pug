@@ -1,0 +1,22 @@
+//- Indica que estamos usando html5
+doctype html
+//- Indicamos el lenguaje de nuestra pagina web
+html(lang="eng")
+  head
+    //- Para que se pueden leer caracteres especiales
+    meta(charset='UTF-8')
+    //- Etiqueta SEO para motores de busqueda
+    meta(name='description' content='Descripcion de nuestra web')
+    //- Etiqueta SEO para robots de busqueda
+    meta(name='robots' content='index, follow')
+    //- Etiqueta necesaria para trabajar con resposive design
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    //- Para agregar compatibilidad con internet explorer
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    //- Titulo del documento
+    title nexter &mdash; your home, your freedom
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i")
+    link(rel="stylesheet", href="./sass/main.scss")
+    link(rel="shortcut icon", href="./img/favicon.png", type="image/png")
+  body.container
+    block main
