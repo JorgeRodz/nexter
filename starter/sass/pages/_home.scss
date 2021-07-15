@@ -1,96 +1,48 @@
-.section-about {
-  background-color: $color-grey-light-1;
-  padding: 25rem 0;
-  margin-top: -20vh;
-  margin-bottom: 5rem;
+/* The parent of all is .container who is a grid */
 
-  @include respond(tablet-portrait) {
-    padding: 20rem 0;
+.sidebar {
+  background-color: $color-primary;
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1 / -1;
+}
+
+.header {
+  background-color: $color-grey-dark-1;
+  grid-column: full-start / col-end 6;
+}
+
+.realtors {
+  background-color: $color-secondary;
+  grid-column: col-start 7 / full-end;
+}
+
+.features {
+  background-color: $color-grey-light-2;
+  grid-column: center-start / center-end;
+}
+
+.story {
+  &__pictures {
+    background-color: $color-primary;
+    grid-column: full-start / col-end 4;
+  }
+  &__content {
+    background-color: $color-grey-light-1;
+    grid-column: col-start 5 / full-end;
   }
 }
 
-.section-features {
-  padding: 20rem 0;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba($color-primary-light, 0.8),
-      rgba($color-primary-dark, 0.8)
-    ),
-    url("../img/nat-4.jpg");
-  background-size: cover;
-  margin-top: -10rem;
-
-  transform: skewY(-4deg);
-
-  & > * {
-    transform: skewY(4deg);
-  }
-
-  @include respond(tablet-portrait) {
-    padding: 10rem 0;
-  }
+.homes {
+  background-color: $color-secondary;
+  grid-column: center-start / center-end;
 }
 
-.sectio-tours {
-  background-color: $color-grey-light-1;
-  padding: 25rem 0 15rem 0;
-  margin-top: -10rem;
-
-  @include respond(tablet-portrait) {
-    padding: 20rem 0 10rem 0;
-  }
+.gallery {
+  background-color: $color-grey-dark-1;
+  grid-column: full-start / full-end;
 }
 
-.section-stories {
-  position: relative;
-  padding: 15rem 0;
-
-  @include respond(tablet-portrait) {
-    padding: 10rem 0;
-  }
-}
-
-.section-book {
-  padding: 15rem 0;
-  background-image: linear-gradient(
-    to right bottom,
-    $color-primary-light,
-    $color-primary-dark
-  );
-
-  @include respond(tablet-portrait) {
-    padding: 10rem 0;
-  }
-
-  .book {
-    background-image: linear-gradient(
-        105deg,
-        rgba($color-white, 0.9) 50%,
-        transparent 50%
-      ),
-      url(../img/nat-10.jpg);
-    background-size: 100%; // same result as cover
-    border-radius: 0.3rem;
-    box-shadow: 1rem 4rem 10rem 5rem rgba($color-black, 0.15);
-
-    @include respond(tablet-landscape) {
-      background-image: linear-gradient(
-          105deg,
-          rgba($color-white, 0.9) 65%,
-          transparent 65%
-        ),
-        url(../img/nat-10.jpg);
-      background-size: cover; // same result as cover
-    }
-
-    @include respond(tablet-portrait) {
-      background-image: linear-gradient(
-          to right,
-          rgba($color-white, 0.9) 0%,
-          rgba($color-white, 0.9) 100%
-        ),
-        url(../img/nat-10.jpg);
-      background-size: cover; // same result as cover
-    }
-  }
+.footer {
+  background-color: $color-secondary;
+  grid-column: full-start / full-end;
 }
