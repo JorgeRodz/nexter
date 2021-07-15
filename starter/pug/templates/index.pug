@@ -19,4 +19,7 @@ html(lang="eng")
     link(rel="stylesheet", href="./sass/main.scss")
     link(rel="shortcut icon", href="./img/favicon.png", type="image/png")
   body.container
-    block main
+    include ./../includes/sidebar
+    include ./../includes/header-default
+    block body-content
+    include ./../includes/footer-default

@@ -3,12 +3,19 @@
   "version": "1.0.0",
   "description": "Landing page simulating and web app which sold houses",
   "scripts": {
+    "--commentStart1-": "---- DEVELOPER WORKFLOW ----",
     "pug:watch": "pug -w ./ -o ./ -P",
     "parcel:serve": "parcel serve ./index.html",
     "nra-dev": "npm-run-all --parallel pug:watch parcel:serve",
+    "--commentEnd1--": "---- DEVELOPER WORKFLOW ----",
+    "--commentStart2--": "---- BUILD WORKFLOW ----",
     "pug:compile": "pug ./index.pug -P",
     "parcel:build": "parcel build ./index.html",
-    "nra-build": "npm-run-all pug:compile parcel:build"
+    "nra-build": "npm-run-all pug:compile parcel:build",
+    "--commentEnd2--": "---- DEVELOPER WORKFLOW ----",
+    "--commentStart3-": "---- OTHERS SCRIPTS ----",
+    "pug:compile-all": "pug ./pug -o ./pug -P",
+    "pug:compile-one": "pug ./index.pug -P"
   },
   "keywords": [],
   "author": "Jorge Alberto Rodriguez Flores",
