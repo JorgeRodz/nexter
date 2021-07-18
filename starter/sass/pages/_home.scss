@@ -17,8 +17,13 @@
 }
 
 .features {
-  background-color: $color-grey-light-2;
   grid-column: center-start / center-end;
+
+  margin: 15rem 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6rem; //if 1 value is specify would apply the same gap for both(row & column)
 }
 
 .story {
