@@ -22,8 +22,27 @@
   margin: 15rem 0;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 6rem; //if 1 value is specify would apply the same gap for both(row & column)
+  // grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 7rem; //if 1 value is specify would apply the same gap for both(row & column)
+}
+.feature {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: repeat(2, min-content);
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+  align-items: center;
+
+  &__icon {
+    color: $color-primary;
+    font-size: 5rem;
+    line-height: 0;
+  }
+  &__text {
+    font-size: 1.7rem;
+    grid-column: 1 / -1;
+  }
 }
 
 .story {

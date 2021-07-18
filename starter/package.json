@@ -22,11 +22,11 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "@parcel/transformer-image": "^2.0.0-nightly.2393",
-    "@parcel/transformer-sass": "^2.0.0-beta.3.1",
+    "@parcel/transformer-image": "^2.0.0-nightly.2398",
+    "@parcel/transformer-sass": "^2.0.0-nightly.776",
     "autoprefixer": "^10.2.6",
     "npm-run-all": "^4.1.5",
-    "parcel": "^2.0.0-beta.3.1",
+    "parcel": "^2.0.0-nightly.774",
     "pug-cli": "^1.0.0-alpha6"
   }
 }
