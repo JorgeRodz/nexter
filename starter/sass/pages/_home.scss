@@ -100,8 +100,17 @@
 }
 
 .homes {
-  background-color: $color-secondary;
   grid-column: center-start / center-end;
+
+  margin: 15rem 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 7rem; //if 1 value is specify would apply the same gap for both(row & column)
+
+  .home {
+    background-color: $color-grey-light-1;
+  }
 }
 
 .gallery {
