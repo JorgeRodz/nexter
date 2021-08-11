@@ -12,7 +12,7 @@
     "pug:compile": "pug ./index.pug -P",
     "parcel:build": "parcel build ./index.html",
     "nra-build": "npm-run-all pug:compile parcel:build",
-    "--commentEnd2--": "---- DEVELOPER WORKFLOW ----",
+    "--commentEnd2--": "---- BUILD WORKFLOW ----",
     "--commentStart3-": "---- OTHERS SCRIPTS ----",
     "pug:compile-all": "pug ./pug -o ./pug -P",
     "pug:compile-one": "pug ./index.pug -P"
