@@ -1,7 +1,21 @@
 extends ./pug/templates/index
 
 block body-content
-  div.realtors Top 3 realtors
+  div.realtors
+    h3.heading-3
+    div.realtors__list
+      img.realtors__img(src="./img/realtor-1.jpeg", alt="Realtor 1")
+      div.realtor__details
+        h4.heading-4.heading-4--light Erik Feinman
+        p.realtors__sold 245 houses sold
+      img.realtors__img(src="./img/realtor-2.jpeg", alt="Realtor 2")
+      div.realtor__details
+        h4.heading-4.heading-4--light Kim Brown
+        p.realtors__sold 212 houses sold
+      img.realtors__img(src="./img/realtor-3.jpeg", alt="Realtor 3")
+      div.realtor__details
+        h4.heading-4.heading-4--light Tobey Ramsen
+        p.realtors__sold 198 houses sold
   section.features
     div.feature
       i.icon-basic-world.feature__icon
