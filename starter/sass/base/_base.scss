@@ -1,6 +1,10 @@
 html {
   box-sizing: border-box; /*Aplicar correctamente box-sizing*/
   font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%;
+
+  @include respond(1200) {
+    font-size: 50%; // 1rem = 8px -> 8/16 * 100 = 50
+  }
 }
 *,
 *::before,
