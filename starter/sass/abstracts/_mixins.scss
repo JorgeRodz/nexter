@@ -31,6 +31,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
       @content;
     }
   }
+  @if $breakpoint == 800 {
+    @media only screen and (max-width: 50em) {           // 800px / 16 = 50em
+      @content;
+    }
+  }
   @if $breakpoint == phone {
     @media only screen and (max-width: 37.5em) {            // 600px / 16 = 37.5
       @content;
